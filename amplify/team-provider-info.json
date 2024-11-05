@@ -10,6 +10,24 @@
       "StackName": "amplify-remoteamplifylatest-dev-c0acd",
       "StackId": "arn:aws:cloudformation:ap-south-1:713881804360:stack/amplify-remoteamplifylatest-dev-c0acd/2a98dbf0-997c-11ef-b81c-0635857f155f",
       "AmplifyAppId": "d2fdqb9yh8o6c0"
+    },
+    "categories": {
+      "function": {
+        "restserver": {
+          "localstorageKey": "./scratch",
+          "nodeBasePath": "/",
+          "callBackUrlPort": "https://hn9szq20y6.execute-api.ap-south-1.amazonaws.com/dev/rest-server/",
+          "deploymentBucketName": "amplify-remoteamplifylatest-dev-c0acd-deployment",
+          "s3Key": "amplify-builds/restserver-65592f4e496f7a6a6671-build.zip"
+        },
+        "testserver": {
+          "deploymentBucketName": "amplify-remoteamplifylatest-dev-c0acd-deployment",
+          "s3Key": "amplify-builds/testserver-59644244525661763669-build.zip"
+        }
+      },
+      "api": {
+        "combineus": {}
+      }
     }
   }
 }

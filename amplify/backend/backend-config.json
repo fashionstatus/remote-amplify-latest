@@ -1,1 +1,97 @@
-{}
+{
+  "api": {
+    "combineus": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "restserver"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "testserver"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "restserver": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "testserver": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_restserver_callBackUrlPort": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "restserver"
+        }
+      ]
+    },
+    "AMPLIFY_function_restserver_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "restserver"
+        }
+      ]
+    },
+    "AMPLIFY_function_restserver_localstorageKey": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "restserver"
+        }
+      ]
+    },
+    "AMPLIFY_function_restserver_nodeBasePath": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "restserver"
+        }
+      ]
+    },
+    "AMPLIFY_function_restserver_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "restserver"
+        }
+      ]
+    },
+    "AMPLIFY_function_testserver_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testserver"
+        }
+      ]
+    },
+    "AMPLIFY_function_testserver_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testserver"
+        }
+      ]
+    }
+  }
+}

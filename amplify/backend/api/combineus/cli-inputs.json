@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/api": {
+      "name": "/api",
+      "lambdaFunction": "restserver",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/test": {
+      "name": "/test",
+      "lambdaFunction": "testserver",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "lambdaLayers": [
+    {
+      "type": "ExternalLayer",
+      "arn": "arn:aws:lambda:ap-south-1:713881804360:layer:serverless-http-layer-part5:1"
+    },
+    {
+      "type": "ExternalLayer",
+      "arn": "arn:aws:lambda:ap-south-1:713881804360:layer:serverless-http-layer-part6:1"
+    },
+    {
+      "type": "ExternalLayer",
+      "arn": "arn:aws:lambda:ap-south-1:713881804360:layer:serverless-http-layer-part7:1"
+    },
+    {
+      "type": "ExternalLayer",
+      "arn": "arn:aws:lambda:ap-south-1:713881804360:layer:serverless-http-layer-part9:1"
+    },
+    {
+      "type": "ExternalLayer",
+      "arn": "arn:aws:lambda:ap-south-1:713881804360:layer:serverless-http-layer-part10:1"
+    }
+  ],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "localstorageKey",
+      "environmentVariableName": "LOCALSTORAGE_KEY"
+    },
+    {
+      "cloudFormationParameterName": "nodeBasePath",
+      "environmentVariableName": "NODE_BASE_PATH"
+    },
+    {
+      "cloudFormationParameterName": "callBackUrlPort",
+      "environmentVariableName": "CALL_BACK_URL_PORT"
+    }
+  ]
+}
