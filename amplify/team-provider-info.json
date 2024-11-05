@@ -18,7 +18,7 @@
           "nodeBasePath": "/",
           "callBackUrlPort": "https://hn9szq20y6.execute-api.ap-south-1.amazonaws.com/dev/rest-server/",
           "deploymentBucketName": "amplify-remoteamplifylatest-dev-c0acd-deployment",
-          "s3Key": "amplify-builds/restserver-65592f4e496f7a6a6671-build.zip"
+          "s3Key": "amplify-builds/restserver-6a363938527a705a3148-build.zip"
         },
         "testserver": {
           "deploymentBucketName": "amplify-remoteamplifylatest-dev-c0acd-deployment",

@@ -20,13 +20,21 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 // Replace these with your values
 const { OAuth2Client } = require('google-auth-library');
-const CLIENT_ID = '396135579027-c5jg963rse0ltpqm60dsd5dm3e7tovvq.apps.googleusercontent.com';
-const CLIENT_SECRET = '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';
+ 
+const CLID= 'krRm8HbsGJdajy3oFTKH1XVnK7X3LnUBWqPHiDPNgx12eiXXAzgLfYFR4vwSBSmtERYrJb7Pb2FRomUqek4CwgaVeZLZQuMQJQ';
+ 
+const CSRET = '87gm8qXusd2mKGaPpricTFxGKZSYGkMqKnez9o2riv1uofpN'
 const REDIRECT_URI = 'https://tjfh2jct45.execute-api.ap-south-1.amazonaws.com/dev/api/auth/google'
 //'http://localhost:3000/dev/api/auth/external/google/callback/login'// 'http://localhost:3000/auth/google/callback';
-const client = new OAuth2Client(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
+
 // https://tjfh2jct45.execute-api.ap-south-1.amazonaws.com/dev/api/auth/google
 const express = require('express')
+const bs58 = require('bs58');
+const decodedclidBase58 = Buffer.from(bs58.decode(CLID)).toString('utf-8');
+const decodedcsrectBase58 = Buffer.from(bs58.decode(CSRET)).toString('utf-8');
+
+const client = new OAuth2Client(CLID, CSRET, REDIRECT_URI);
+
 const bodyParser = require('body-parser')
 const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
 
